@@ -3,64 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pomodoro Timer First Brainstorm Meeting">
     <title>Pomodoro Timer First Brainstorm</title>
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <h1>Pomodoro Timer First Brainstorm</h1>
-    <h2>Brainstorming Session</h2>
-    <h3>Date: April 12, 2023</h3>
-    
-    <h4>Attendance:</h4>
-    <ul>Person 1</li>
-        <li>Person 2</li>
-        <li>Person 3</li>
-        <li>Person 4</li>
-    </ul>
-    
-    <h4>Agenda:</h4>
-    <ol>
-        <li>Review last meeting's unfinished business</li>
-        <li>Discuss new business</li>
-        <li>Brainstorm Pomodoro Timer features</li>
-        <li>Review progress and discuss new ideas!</li>
-        <li>Address any questions or concerns about project!</li>
-    </ol>
+    <header>
+        <h1>Pomodoro Timer First Brainstorm</h1>
+        <nav>
+            <a href="#attendance">Attendance</a> |
+            <a href="#agenda">Agenda</a> |
+            <a href="#recordings">Recordings</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Brainstorming Session</h2>
+            <h4><strong>IMPORTANT: </strong>Use of in-line text semantics is located in the Interactive Notes</h4>
+            <h3>Date: April 12, 2023</h3>
 
-    <div class="my-list">
-        <h4>My Test list:</h4>
-      
-        <ul>
-           <li>Tree</li>
-           <li>Star Trek</li>
-           <li>Monkey Mode</li>
-        </ul>
-      </div>
+            <div id="attendance">
+                <h4>Attendance:</h4>
+                <ul>
+                    <li>John Doe</li>
+                    <li>Jane Smith</li>
+                    <li>Michael Brown</li>
+                    <li>Emily Johnson</li>
+                </ul>
+            </div>
+            
+            <div id="agenda">
+                <h4>Agenda:</h4>
+                <ol>
+                    <li>Review last meeting's unfinished business</li>
+                    <li>Discuss new business</li>
+                    <li>Brainstorm Pomodoro Timer features</li>
+                    <li>Review diagrams and architecture</li>
+                    <li>Address any questions or concerns</li>
+                </ol>
+            </div>
+        </section>
+        
+        <section>
+            <h4>Unfinished business from last meeting:</h4>
+            <p>Finalize project specifications and choose the tech stack.</p>
+            
+            <h4>New business:</h4>
+            <p>Assign tasks and set deadlines for the Pomodoro Timer project.</p>
+            
+            <h4>Miscellaneous comments, questions, concerns:</h4>
+            <p>John brought up concerns about the project timeline and requested a review of milestones. <br> Jane suggested using an alternative timer feature for the Pomodoro Timer.</p>
+        </section>
+        
+        <section>
+            <h4>Random Images:</h4>
+            <img src="mediaFolder/Elnuks.png" alt="An animal that looks like a snow bison">
+            <img src="mediaFolder/ScreenshotsPic.png" alt="Whiteboard Diagram 2">
+        </section>
+        
+        <section id="recordings">
+            <h4>Audio Recording:</h4>
+            <audio controls>
+                <source src="/mediaFolder/SampleAudio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <h4>Video Recording:</h4>
+            <video controls width="320" height="240">
+                <source src="/mediaFolder/SampleVideo.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <br></br> <!--This break is for spacing between the video and the Interactive Notes-->
+        </section>
+        
+        <section>
+            <details>
+                <summary><b>Interactive Notes</b></summary>
+                <p>These are interactive notes. You can click on the summary to expand or collapse the content.</p>
+                <p>
+                    Understanding the differences between <i>&lt;i&gt;</i> and <i>&lt;em&gt;</i>
+                    and <i>&lt;b&gt;</i> and <i>&lt;strong&gt;</i> was a bit difficult for the group at the beginning.
+                </p>
+                <p>However, we learned how to distinguish between their uses through these links:</p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">Strong</a></li> 
+                    <!--target="_blank" opens link in new tab instead of same tab-->
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">Em</a></li>
+                </ul> 
+                <p>Apparently, things used to be much clearer in HTML4, because <i>&lt;i&gt;</i> and <i>&lt;b&gt;</i> 
+                    used to just have <em>explicit</em> meanings. This meant that they just meant text being bold and italic, while
+                    <i>&lt;em&gt;</i> and <i>&lt;strong&gt;</i> had <em>semantic</em> meanings. That meant that there was an underlying
+                    difference in what using these tags meant. In HTML 5, however, all the tags are semantic, apparently trying to clarify
+                    what exactly the difference bewtween the text semantics. Long story short, <i>&lt;strong&gt;</i> and <i>&lt;em&gt;</i>
+                    are used when you need to emphasize or say something strongly. Italics would be restricted to things that wouldn't affect speech,
+                    but maybe you'd want to point out in text, like book titles. For <i>&lt;em&gt;</i>, think levi-<em>OH-</em>saw, not levio<em>-saw</em>.
+                    For <i>&lt;strong&gt;</i>, thing of things you'd want people to notice the importance of. Warnings, for example, should be in <i>&lt;strong&gt;</i>
+                    tags, as you want people to be aware of the contents.
+                </p>
+            </details>
+        </section>
+    </main>
     
-    <h4>Unfinished business from last meeting:</h4>
-    <p>Finalize project specs.</p>
-    
-    <h4>New business:</h4>
-    <p>Assign tasks and set deadlines for the Pomodoro Timer project.</p>
-    
-    <h4>Miscellaneous comments, questions, concerns:</h4>
-    <p>Person 1 brought up concerns about deadlines and schedule conflicts with their midterms.</p>
-    
-    <h4>Diagrams and Architecture:</h4>
-    <img src="whiteboard_diagram_1.jpg" alt="Whiteboard Diagram 1">
-    <img src="whiteboard_diagram_2.jpg" alt="Whiteboard Diagram 2">
-    
-    <h4>Audio Recording:</h4>
-    <audio controls>
-        <source src="meeting_audio.ogg" type="audio/ogg">
-        <source src="meeting_audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    
-    <h4>Video Recording:</h4>
-    <video controls width="320" height="240">
-        <source src="meeting_video.mp4" type="video/mp4">
-        <source src="meeting_video.ogg" type="video/ogg">
-        Your browser does not support the video element.
-    </video>
-</body>
+    <footer>
+        <hr>
+        <p>
+            Basic Footer Notes, nothing to see here!
+        </p>
+    </footer>
+
+    <section>
+        <h4>Contact Form</h4>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                <br><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                <br><br>
+                <label for="interests">Interests:</label>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="design" name="interests" value="design">
+                <label for="design">Design</label>
+                <br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                <br><br>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                </select>
+                <br><br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+    </body>
 </html>
+    
