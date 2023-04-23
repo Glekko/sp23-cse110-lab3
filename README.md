@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-Link to Website: https://glekko.github.io/Lab2_Starter/
+# Lab 3 - Website
+Link to Website: https://glekko.github.io/sp23-cse110-lab3/
