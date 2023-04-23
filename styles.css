@@ -28,7 +28,20 @@ header.main-header { /* Combining Two Selectors */
 
 .main-nav {
     font-size: 1.125rem;
+    display: flex; /* apply flex to the display property */
+    justify-content: space-around; /* flexbox attribute: evenly distribute the available space around the items */
+    align-items: center; /* flexbox attribute: vertically align items to the center */
+    flex-wrap: wrap; /* flexbox attribute: allow items to wrap to the next line if needed */
 }
+
+.brainstorming-session {
+    display: grid; /* apply grid to the display property */
+    grid-template-columns: repeat(3, 1fr); /* grid attribute: create 3 equal-width columns */
+    grid-gap: 1rem; /* grid attribute: set the gap between grid items */
+    grid-auto-rows: minmax(100px, auto); /* grid attribute: set the minimum and maximum height of the rows */
+}
+
+
 
 .main-nav a[href] { /* Attribute Selector */
     color: #FFF;
@@ -141,6 +154,10 @@ p {
 
 /* Responsiveness */
 @media screen and (max-width: 767px) {
+    .brainstorming-session {
+        grid-template-columns: 1fr; /* change the grid to 1 column for smaller screens */
+    }
+    
     .main-header {
         padding: 5vw; /* vw (relative) */
     }
@@ -176,6 +193,9 @@ ul.attendees li {
 .recordings-section h3 + p {
     text-decoration: underline;
 }
+
+
+
 
 /* Custom font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
