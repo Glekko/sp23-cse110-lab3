@@ -6,25 +6,27 @@
     <meta name="description" content="Pomodoro Timer First Brainstorm Meeting">
     <title>Pomodoro Timer First Brainstorm</title>
     <link rel="icon" href="favicon.ico">
+    <!-- Add the link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>Pomodoro Timer First Brainstorm</h1>
-        <nav>
+        <nav class="main-nav">
             <a href="#attendance">Attendance</a> |
             <a href="#agenda">Agenda</a> |
             <a href="#recordings">Recordings</a>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="brainstorming-session">
             <h2>Brainstorming Session</h2>
-            <h4><strong>IMPORTANT: </strong>Use of in-line text semantics is located in the Interactive Notes</h4>
+            <h4 class="important-note"><strong>IMPORTANT: </strong>Use of in-line text semantics is located in the Interactive Notes</h4>
             <h3>Date: April 12, 2023</h3>
 
-            <div id="attendance">
+            <div id="attendance" class="attendance">
                 <h4>Attendance:</h4>
-                <ul>
+                <ul class="attendees">
                     <li>John Doe</li>
                     <li>Jane Smith</li>
                     <li>Michael Brown</li>
@@ -32,10 +34,10 @@
                 </ul>
             </div>
             
-            <div id="agenda">
+            <div id="agenda" class="agenda">
                 <h4>Agenda:</h4>
-                <ol>
-                    <li><span>Review</span> last meeting's unfinished business</li> <!--Obligatory span here-->
+                <ol class="agenda-items">
+                    <li><span>Review</span> last meeting's unfinished business</li>
                     <li>Discuss new business</li>
                     <li>Brainstorm Pomodoro Timer features</li>
                     <li>Review diagrams and architecture</li>
@@ -44,7 +46,7 @@
             </div>
         </section>
         
-        <section>
+        <section class="business-section">
             <h4>Unfinished business from last meeting:</h4>
             <p>Finalize project specifications and choose the tech stack.</p>
             
@@ -55,29 +57,27 @@
             <p>John brought up concerns about the project timeline and requested a review of milestones. <br> Jane suggested using an alternative timer feature for the Pomodoro Timer.</p>
         </section>
         
-        <section>
+        <section class="images-section">
             <h4>Random Images:</h4>
-            <img src="mediaFolder/Elnuks.png" alt="An animal that looks like a snow bison">
-            <img src="mediaFolder/ScreenshotsPic.png" alt="Whiteboard Diagram 2">
+            <img src="mediaFolder/Elnuks.png" alt="An animal that looks like a snow bison" class="random-image">
+            <img src="mediaFolder/ScreenshotsPic.png" alt="Whiteboard Diagram 2" class="random-image">
         </section>
         
-        <section id="recordings">
+        <section id="recordings" class="recordings-section">
             <h4>Audio Recording:</h4>
             <audio controls>
                 <source src="https://github.com/Glekko/Lab2_Starter/raw/main/mediaFolder/SampleAudio.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-            
             <h4>Video Recording:</h4>
-            <video controls width="320" height="240">
+            <video controls width="320" height="240" class="video-recording">
                 <source src="https://github.com/Glekko/Lab2_Starter/raw/main/mediaFolder/SampleVideo.mp4" type="video/mp4">
                 Your browser does not support the video element.
             </video>
-            <br> <!--This break is for spacing between the video and the Interactive Notes-->
         </section>
         
-        <section>
-            <details>
+        <section class="interactive-notes-section">
+            <details class="interactive-notes">
                 <summary><b>Interactive Notes</b></summary>
                 <p>These are interactive notes. You can click on the summary to expand or collapse the content.</p>
                 <p>
@@ -85,35 +85,34 @@
                     and <i>&lt;b&gt;</i> and <i>&lt;strong&gt;</i> was a bit difficult for the group at the beginning.
                 </p>
                 <p>However, we learned how to distinguish between their uses through these links:</p>
-                <ul>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">Strong</a></li> 
-                    <!--target="_blank" opens link in new tab instead of same tab-->
+                <ul class="resource-links">
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">Strong</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">Em</a></li>
                 </ul> 
                 <p>Apparently, things used to be much clearer in HTML4, because <i>&lt;i&gt;</i> and <i>&lt;b&gt;</i> 
                     used to just have <em>explicit</em> meanings. This meant that they just meant text being bold and italic, while
                     <i>&lt;em&gt;</i> and <i>&lt;strong&gt;</i> had <em>semantic</em> meanings. That meant that there was an underlying
                     difference in what using these tags meant. In HTML 5, however, all the tags are semantic, apparently trying to clarify
-                    what exactly the difference bewtween the text semantics. Long story short, <i>&lt;strong&gt;</i> and <i>&lt;em&gt;</i>
+                    what exactly the difference between the text semantics. Long story short, <i>&lt;strong&gt;</i> and <i>&lt;em&gt;</i>
                     are used when you need to emphasize or say something strongly. Italics would be restricted to things that wouldn't affect speech,
                     but maybe you'd want to point out in text, like book titles. For <i>&lt;em&gt;</i>, think levi-<em>OH-</em>saw, not levio<em>-saw</em>.
-                    For <i>&lt;strong&gt;</i>, thing of things you'd want people to notice the importance of. Warnings, for example, should be in <i>&lt;strong&gt;</i>
+                    For <i>&lt;strong&gt;</i>, think of things you'd want people to notice the importance of. Warnings, for example, should be in <i>&lt;strong&gt;</i>
                     tags, as you want people to be aware of the contents.
                 </p>
             </details>
         </section>
     </main>
     
-    <footer>
+    <footer class="main-footer">
         <hr>
         <p>
             Basic Footer Notes, nothing to see here!
         </p>
     </footer>
-
-    <section>
+    
+    <section class="contact-form-section">
         <h4>Contact Form</h4>
-        <form>
+        <form class="contact-form">
             <fieldset>
                 <legend>Contact Information</legend>
                 <label for="name">Name:</label>
@@ -122,37 +121,24 @@
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email">
                 <br><br>
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
                 <br><br>
-                <label>Gender:</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
-                <br><br>
-                <label>Interests:</label>
-                <input type="checkbox" id="coding" name="interests" value="coding">
-                <label for="coding">Coding</label>
-                <input type="checkbox" id="design" name="interests" value="design">
-                <label for="design">Design</label>
+            </fieldset>
+
+            <fieldset> 
+                <legend>Message</legend>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
                 <br><br>
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                <textarea id="message" name="message" rows="6" cols="30"></textarea>
                 <br><br>
-                <label for="country">Country:</label>
-                <select id="country" name="country">
-                    <option value="usa">USA</option>
-                    <option value="canada">Canada</option>
-                    <option value="uk">UK</option>
-                </select>
-                <br><br>
-                <button type="submit">Submit</button>
             </fieldset>
+        
+            <input type="submit" value="Submit">
         </form>
     </section>
-    </body>
+</body>
 </html>
     
