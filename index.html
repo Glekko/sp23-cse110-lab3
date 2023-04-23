@@ -3,13 +3,16 @@
 <head>
     <!-- Added the link to the external CSS file -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Internal CSS styling example. -->
+    <!-- Internal CSS styling example for Footer. -->
     <style>
         footer {
             background-color: #333;
             color: white;
-            padding: 1rem;
+            padding: 1.5rem 2rem;
             text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 
@@ -24,14 +27,14 @@
         <h1>Pomodoro Timer First Brainstorm</h1>
         <nav class="main-nav">
             <a href="#attendance">Attendance</a> |
-            <a href="#agenda">Agenda</a> |
+            <a href="#agenda">Agenda</a> 
             <a href="#recordings">Recordings</a>
         </nav>
     </header>
     <main>
         <section class="brainstorming-session">
             <h2>Brainstorming Session</h2>
-            <h4 class="important-note"><strong>IMPORTANT: </strong>Use of in-line text semantics is located in the Interactive Notes</h4>
+            <h4 id="important-note"><strong>IMPORTANT: </strong>Use of in-line text semantics is located in the Interactive Notes</h4>
             <h3>Date: April 12, 2023</h3>
 
             <div id="attendance" class="attendance">
@@ -41,6 +44,9 @@
                     <li>Jane Smith</li>
                     <li>Michael Brown</li>
                     <li>Emily Johnson</li>
+                        <ul>
+                            <li><i>Absent</i></li>
+                        </ul>
                     <li style="font-weight: bold;">This is an example of inline CSS.</li>
                 </ul>
             </div>
@@ -58,6 +64,7 @@
         </section>
         
         <section class="business-section">
+            <h2>Business Section</h2>
             <h4>Unfinished business from last meeting:</h4>
             <p>Finalize project specifications and choose the tech stack.</p>
             
@@ -75,12 +82,14 @@
         </section>
         
         <section id="recordings" class="recordings-section">
-            <h4>Audio Recording:</h4>
+            <h3>Audio Recording:</h3>
+            <p>This is for the audio recording.</p>
             <audio controls>
                 <source src="https://github.com/Glekko/Lab2_Starter/raw/main/mediaFolder/SampleAudio.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-            <h4>Video Recording:</h4>
+            <h3>Video Recording:</h3>
+            <p>This is for the video recording.</p>
             <video controls width="320" height="240" class="video-recording">
                 <source src="https://github.com/Glekko/Lab2_Starter/raw/main/mediaFolder/SampleVideo.mp4" type="video/mp4">
                 Your browser does not support the video element.
