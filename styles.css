@@ -10,7 +10,7 @@ body {
 /* Header styles */
 .main-header {
     background-color: hsl(208, 56%, 53%);
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2rem; /* rem (relative) */
     text-align: center;
 }
 
@@ -28,6 +28,10 @@ body {
     text-decoration: none;
 }
 
+.main-nav a:active {
+    color: hsl(208, 56%, 63%);
+}
+
 .main-nav a:hover {
     text-decoration: underline;
 }
@@ -35,31 +39,37 @@ body {
 /* Main content styles */
 main {
     padding: 2rem;
+    min-height: 300px; /* Add min-height */
+    position: relative; /* Add position relative */
+    top: 100px; /* Add top value */
 }
 
 .attendance, .agenda, .business-section, .images-section, .recordings-section, .interactive-notes-section {
-    margin-bottom: 2rem;
+    margin-bottom: 2%;
 }
 
 .attendees {
     list-style-type: disc;
-    padding-left: 50;
+    padding-left: 1cm; /* cm (absolute) */
 }
 
 .agenda-items {
     list-style-type: decimal;
-    padding-left: 50;
-
+    padding-left: 1cm;
 }
 
 .random-image {
     width: 100%;
     max-width: 300px;
+    min-width: 100px; /* Add min-width */
     height: auto;
     display: inline-block;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    border: 1px solid #CCC;
+    /* Border properties */
+    border-style: solid;
+    border-color: #CCC;
+    border-width: 1px;
     border-radius: 4px;
 }
 
@@ -67,15 +77,10 @@ main {
 .important-note {
     color: red;
     font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-right: 0;
     margin-bottom: 1rem;
-}
-
-/* Footer styles */
-.main-footer {
-    background-color: #333;
-    color: #FFF;
-    padding: 1rem;
-    text-align: center;
+    margin-left: 0;
 }
 
 /* Contact form styles */
@@ -102,7 +107,7 @@ main {
 .contact-form input[type="text"], .contact-form input[type="tel"], .contact-form textarea {
     width: 100%;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 12pt; /* pt (absolute) */
 }
 
 .contact-form input[type="submit"] {
@@ -124,7 +129,7 @@ main {
 /* Responsiveness */
 @media screen and (max-width: 767px) {
     .main-header {
-        padding: 1rem;
+        padding: 5vw; /* vw (relative) */
     }
 
     .main-nav {
