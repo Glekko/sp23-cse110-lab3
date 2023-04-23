@@ -159,23 +159,6 @@ ul.attendees li {
    color: violet;
 }
 
-/* Child Combinator (element > element) */
-/* This will style all direct child paragraphs of the .agenda class */
-.agenda > ol {
-    font-weight: bold;
-}
-
-/* General sibling combinator (element ~ element) */
-/* This will style all paragraphs that are siblings of h2 elements within the .business-section class */
-.business-section h2 ~ p {
-    font-style: italic;
-}
-
-/* Adjacent sibling combinator (element + element) */
-/* This will style the paragraph immediately following an h3 element within the .recordings-section class */
-.recordings-section h3 + p {
-    text-decoration: underline;
-}
 
 
 
